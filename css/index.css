@@ -1,0 +1,446 @@
+@import url(base.css);
+/*头部开始*/
+header{
+    width: 100%;
+    height: 40px;
+    background: #444 ;
+}
+main{
+    /*width: 976px;*/
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: #444 ;
+}
+header div{
+     font-size:10px;
+     color: #a8a8aa;
+}
+/*头部结束*/
+/*导航开始*/
+nav{
+    width: 100%;
+    height:44px ;
+    background: #333333;
+}
+nav ul{
+    /*width: 976px;*/
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+nav ul li a{
+    font-size:12px ;
+    color: #fff;
+}
+nav ul li .iconfont{
+    font-size: 23px;
+}
+.max ul li a:hover{
+   color:#A4A4A4;
+}
+.min ul li a:hover{
+    color:#A4A4A4;
+}
+/*导航结束/
+/*列表1开始*/
+.section_1{
+    width: 100%;
+    height:auto;
+}
+.iphonex{
+    position: relative;
+    background: #FAFAFA;
+    overflow: hidden;
+}
+.iphonex .h2_1{
+    color: #111;
+    text-align: center;
+}
+.iphonex .h2_2{
+    color: #111;
+    text-align: center;
+    font-weight: normal;
+}
+.iphonex h3{
+    width:100%;
+    text-align: center;
+}
+.iphonex h3 a{
+    color:#0070c9 ;
+    margin-right:20px;
+    font-weight: normal;
+}
+.iphonex_image1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+}
+.iphonex h3 a:hover{
+    text-decoration:underline;
+
+}
+/*列表1结束*/
+/*列表2开始*/
+.ipad{
+    margin-top: 12px;
+    background:#F5F5F5;
+    overflow: hidden;
+    position: relative;
+}
+.ipad .h2_1{
+    color: #000;
+    font-weight: 400;
+    text-align: center;
+}
+.ipad .h2_2{
+    color: #000;
+    font-weight: 200;
+    text-align: center;
+}
+.ipad h3{
+    text-align: center;
+}
+.ipad h3 a{
+    color:#0070c9 ;
+    margin-right:20px;
+    font-weight: normal;
+}
+.ipad_image1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+}
+.ipad h3 a:hover{
+    text-decoration:underline;
+
+}
+/*列表2结束*/
+/*列表3开始*/
+.section_2{
+    width: 100%;
+    margin-top: 12px;
+    height:auto;
+}
+.section_2 ul .one{
+    float: left;
+    border-bottom:12px  solid #ffffff;
+
+}
+.one h3{
+    color: #000;
+    text-align: center;
+    font-weight: 500;
+}
+.one h4{
+    color: #000;
+    text-align: center;
+    font-weight:200 ;
+}
+
+
+/*列表3结束*/
+/*>1024px时*/
+@media screen and (min-width:1024px) {
+    main {
+        width: 976px;
+    }
+
+    .min {
+        display: none;
+    }
+
+    nav ul {
+        width: 976px;
+    }
+
+    .iphonex .h2_1 {
+        height: 48px;
+        font-size: 44px;
+        line-height: 48px;
+        margin-top: 88px;
+    }
+
+    .iphonex .h2_2 {
+        height: 40px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .iphonex h3 {
+        height: 47px;
+        font-size: 17px;
+        line-height: 47px;
+    }
+
+    .iphonex {
+        height: 580px;
+    }
+
+    .iphonex_image1 {
+        width: 1067px;
+        height: 337px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 0;
+        background: url("../img/iphone_x_large.jpg") no-repeat bottom;
+        background-size: 1067px 337px;
+    }
+
+    .ipad {
+        height: 580px;
+    }
+
+    .ipad .h2_1 {
+        height: 60px;
+        margin-top: 48px;
+        font-size: 56px;
+        line-height: 60px;
+    }
+
+    .ipad .h2_2 {
+        height: 30px;
+        font-size: 25px;
+        margin-top: 6px;
+    }
+
+    .ipad h3 {
+        margin-top: 15px;
+        font-size: 17px;
+        height: 29px;
+        line-height: 29px;
+    }
+
+ .ipad_image1 {
+        width: 930px;
+        height: 355px;
+        background: url("../img/ipad_large.jpg") no-repeat bottom;
+        background-size: 930px 355px;
+    }
+ .one h3{
+        font-size:40px;
+        margin-top: 52px;
+         }
+    .one h4{
+        width:420px ;
+        height: 51px;
+        line-height: 26px;
+        font-size: 19px;
+        margin: 4px auto 0;
+    }
+
+.section_2 ul .one{
+        width:50%;
+        height: 580px;
+        border-right:6px  solid #ffffff;
+        border-left:6px  solid #ffffff;
+        border-bottom:12px  solid #ffffff;
+        box-sizing: border-box;
+        background:url(../img/shop_for_college_large.jpg) no-repeat center;
+    }
+}
+/*<1024px时*/
+@media screen and (max-width:1024px) {
+    main{
+        padding-right: 22px;
+    }
+    .min{
+        display: none;
+    }
+    .max{
+        display: block;
+    }
+    nav ul{
+        padding: 0 22px;
+    }
+.iphonex .h2_1{
+        height: 59px;
+        font-size: 41px;
+        line-height: 59px;
+        margin-top: 101px;
+    }
+ .iphonex .h2_2{
+        height: 28px;
+        font-size: 19px;
+        margin-top: 5px;
+        line-height: 28px;
+    }
+.iphonex h3{
+        margin-top:15px;
+        height: 17px;
+        font-size: 16px;
+        line-height: 17px;
+    }
+ .iphonex{
+        height: 569px;
+    }
+    .iphonex_image1{
+        width: 736px;
+        height: 336px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 0;
+        background: url("../img/iphone_x_medium.jpg") no-repeat bottom;
+        background-size: 736px 336px;
+    }
+.ipad{
+        height: 569px;
+    }
+ .ipad .h2_1{
+        height: 48px;
+        margin-top: 76px;
+        font-size: 44px;
+        line-height:48px;
+    }
+.ipad .h2_2{
+        height:28px;
+        font-size: 20px;
+        margin-top: 5px;
+        line-height: 28px;
+    }
+.ipad h3{
+        margin-top:15px;
+        font-size: 16px;
+        height: 27px;
+        line-height: 27px;
+    }
+.ipad_image1 {
+        width: 650px;
+        height: 325px;
+        background: url("../img/ipad_medium.jpg") no-repeat bottom;
+        background-size: 650px 325px;
+    }
+.one h3{
+        font-size:32px;
+        margin-top: 42px;
+    }
+.one h4{
+        width:330px ;
+        height:44px;
+        line-height: 23px;
+        font-size: 19px;
+        margin: 3px auto 0;
+    }
+ .section_2 ul .one{
+        width:50%;
+        height: 490px;
+        border-right: 6px solid #ffffff;
+        border-left:12px  solid #ffffff;
+        border-bottom:12px  solid #ffffff;
+        box-sizing: border-box;
+        background:url(../img/shop_for_college_large.jpg) no-repeat center;
+  }
+}
+/*<768px时*/
+@media screen and (max-width:768px) {
+    nav ul{
+        padding: 0 22px;
+    }
+    .max{
+        display: none;
+    }
+    .min{
+        display: block;
+    }
+    .iphonex .h2_1{
+        height: 36px;
+        font-size: 32px;
+        line-height: 36px;
+        margin-top: 28px;
+    }
+    .iphonex .h2_2{
+        height: 26px;
+        font-size: 19px;
+        margin-top: 2px;
+        line-height: 26px;
+    }
+    .iphonex h3{
+        height: 16px;
+        font-size: 13px;
+        line-height: 16px;
+        margin-top: 13px;
+    }
+.iphonex{
+        height: 500px;
+    }
+    .iphonex_image1{
+        width: 320px;
+        height:353px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 0;
+        background: url("../img/iphone_x_small.jpg") no-repeat bottom;
+        background-size: 320px 353px;
+    }
+.ipad{
+        height: 500px;
+    }
+ .ipad .h2_1{
+        height: 36px;
+        margin-top:36px;
+        font-size: 32px;
+        line-height:36px;
+    }
+.ipad .h2_2{
+        width:190px ;
+        height:52px;
+        font-size: 18px;
+        line-height: 27px;
+        margin:5px auto 0;
+    }
+.ipad h3{
+        margin-top:6px;
+        font-size: 13px;
+        height: 25px;
+        line-height: 25px;
+    }
+.ipad_image1 {
+        width: 228px;
+        height: 340px;
+        background: url("../img/ipad_small.jpg") no-repeat bottom;
+        background-size: 228px 340px;
+    }
+.one h3{
+        font-size:32px;
+        margin-top: 37px;
+    }
+.one h4{
+        width: 300px;
+        height:44px;
+        line-height: 23px;
+        font-size: 19px;
+        margin: 3px auto 0;
+}
+.section_2 ul .one{
+        width:100%;
+        height: 500px;
+        border-right: none;
+         border-left: none;
+        border-bottom:12px  solid #ffffff;
+        background:url(../img/shop_for_college_small.jpg) no-repeat center;
+    }
+section ul li:nth-child(2n){
+     display: none;
+     border-right: none;
+     border-left: none;
+ }
+}
